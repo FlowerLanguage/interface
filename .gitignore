@@ -38,3 +38,4 @@ transaction-logs
 **/logs/
 **/temp/
 **/classes/
+*.pyc
