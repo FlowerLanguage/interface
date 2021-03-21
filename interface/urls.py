@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('lightnovel.urls')),
     path('', include('foreign_currency.urls')),
+    path('', include('movie.urls')),
 ]
