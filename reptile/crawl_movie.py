@@ -4,6 +4,7 @@ import logging
 import time
 import json
 import pandas as pd
+import sys
 
 logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s - %(filename)s[Line:%(lineno)d] - %(levelname)s %(message)s",
@@ -92,9 +93,11 @@ def get_and_post(year_url):
 
         data = pd.DataFrame(simple)  # 将提取的列表转换为DataFrame对象，方便转换
         data.columns = ['name', 'box', 'avg_fare', 'avg_players', 'url']  # 更改列名
-        data = data.to_dict(orient='records')  # 转换为字典
+        data = data.to_json(orient='records')  # 转换为字典
 
         logging.info('start post movie({}) data!'.format(year))
+
+        logging.info('data size is {}kb!'.format(sys.getsizeof(data) / 1024.))
 
         logging.info('end post movie data!')
 
