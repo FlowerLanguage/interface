@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('lightnovel.urls')),
     path('', include('foreign_currency.urls')),
     path('', include('movie.urls')),
+    path('', include('house_price.urls')),
 ]

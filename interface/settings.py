@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'lightnovel',
     'foreign_currency',
     'movie',
+    'house_price',
 
 ]
 
