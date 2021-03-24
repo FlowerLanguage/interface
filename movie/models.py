@@ -10,4 +10,4 @@ class Movie2011(models.Model):
     url = models.URLField()  # 电影详情页
 
     class Meta:
-        db_table = 'movie2011'
+        db_table = 'movie_2011'
