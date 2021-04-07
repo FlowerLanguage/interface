@@ -74,7 +74,7 @@ def solve_time(date_time):
     return date_time
 
 
-async def get_foreign_exchane(start_date='20050101', end_date='20210111', detail_param=None):
+async def get_foreign_exchane(start_date='20050101', end_date='20210406', detail_param=None):
     """
     获取外汇数据
     :param detail_param: 一个包含curr_id,以及header的列表，必传
@@ -182,10 +182,10 @@ def post_data():
     post请求，将全局变量的值，直接发送给服务器
     """
     headers = {
-        'Authorization': 'Token b0d8c723bd604a17405bef26f9e2dacea9dce54e',
+        'Authorization': 'Token 9345eca2ef271fd25dcec1b6e5f6ab3759836c09',
         'Content-Type': 'application/json'
     }
-    url = 'http://127.0.0.1:8000/foreign_currency/'  # 服务器外汇数据地址
+    url = 'http://60.205.201.200/foreign_currency/'  # 服务器外汇数据地址
     global df  # 引用全局变量
     print(df.dtypes)  # 获取df对象每个列的数据类型
     print(sys.getsizeof(df) / 1024.)  # 获取df对象的大小,kb为单位
