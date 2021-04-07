@@ -35,7 +35,6 @@ overridedb.*
 dump.rdb
 transaction-logs
 **/overlays/
-**/logs/
 **/temp/
 **/classes/
 *.pyc
