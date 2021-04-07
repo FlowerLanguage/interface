@@ -1,0 +1,28 @@
+2021-04-07 15:14:52,635 - crawl_foreign_currency.py[Line: 226] - INFO Start scrapping
+2021-04-07 15:15:24,056 - crawl_foreign_currency.py[Line: 229] - INFO End scrapping
+2021-04-07 15:15:24,056 - crawl_foreign_currency.py[Line: 231] - INFO start post foreign_currency!
+2021-04-07 15:15:24,116 - crawl_foreign_currency.py[Line: 193] - INFO post data 8689.185546875kb!
+2021-04-07 15:15:24,176 - connectionpool.py[Line: 227] - DEBUG Starting new HTTP connection (1): 60.205.201.200:80
+2021-04-07 15:15:24,250 - connectionpool.py[Line: 452] - DEBUG http://60.205.201.200:80 "POST /foreign_currency/ HTTP/1.1" 413 192
+2021-04-07 15:15:24,256 - crawl_foreign_currency.py[Line: 233] - INFO end post foreign_currency!
+2021-04-07 15:24:44,117 - crawl_foreign_currency.py[Line: 226] - INFO Start scrapping
+2021-04-07 15:25:14,817 - crawl_foreign_currency.py[Line: 229] - INFO End scrapping
+2021-04-07 15:25:14,817 - crawl_foreign_currency.py[Line: 231] - INFO start post foreign_currency!
+2021-04-07 15:25:14,872 - crawl_foreign_currency.py[Line: 193] - INFO post data 8689.185546875kb!
+2021-04-07 15:25:14,930 - connectionpool.py[Line: 227] - DEBUG Starting new HTTP connection (1): 60.205.201.200:80
+2021-04-07 15:26:18,027 - connectionpool.py[Line: 452] - DEBUG http://60.205.201.200:80 "POST /foreign_currency/ HTTP/1.1" 504 176
+2021-04-07 15:26:18,027 - crawl_foreign_currency.py[Line: 233] - INFO end post foreign_currency!
+2021-04-07 16:01:12,798 - crawl_foreign_currency.py[Line: 226] - INFO Start scrapping
+2021-04-07 16:01:41,096 - crawl_foreign_currency.py[Line: 229] - INFO End scrapping
+2021-04-07 16:01:41,096 - crawl_foreign_currency.py[Line: 231] - INFO start post foreign_currency!
+2021-04-07 16:01:41,248 - crawl_foreign_currency.py[Line: 193] - INFO post data 7370.9248046875kb!
+2021-04-07 16:01:41,314 - connectionpool.py[Line: 227] - DEBUG Starting new HTTP connection (1): 60.205.201.200:80
+2021-04-07 16:02:43,638 - connectionpool.py[Line: 452] - DEBUG http://60.205.201.200:80 "POST /foreign_currency/ HTTP/1.1" 504 176
+2021-04-07 16:02:43,642 - crawl_foreign_currency.py[Line: 233] - INFO end post foreign_currency!
+2021-04-07 16:08:48,508 - crawl_foreign_currency.py[Line: 226] - INFO Start scrapping
+2021-04-07 16:09:25,988 - crawl_foreign_currency.py[Line: 229] - INFO End scrapping
+2021-04-07 16:09:25,988 - crawl_foreign_currency.py[Line: 231] - INFO start post foreign_currency!
+2021-04-07 16:09:26,087 - crawl_foreign_currency.py[Line: 193] - INFO post data 7370.9248046875kb!
+2021-04-07 16:09:26,203 - connectionpool.py[Line: 227] - DEBUG Starting new HTTP connection (1): 60.205.201.200:80
+2021-04-07 16:11:35,138 - connectionpool.py[Line: 452] - DEBUG http://60.205.201.200:80 "POST /foreign_currency/ HTTP/1.1" 200 5933747
+2021-04-07 16:11:42,918 - crawl_foreign_currency.py[Line: 233] - INFO end post foreign_currency!
