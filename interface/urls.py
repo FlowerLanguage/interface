@@ -26,4 +26,6 @@ urlpatterns = [
     path('', include('movie.urls')),
     path('', include('house_price.urls')),
     path('', include('account.urls')),
+
+    path('', include('website.urls')),
 ]

@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent  # 项目的绝对地址
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'movie',
     'house_price',
     'account',
+    'website',
 
 ]
 
@@ -127,8 +128,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "collected_static")  # 配置静态文件路由
+STATIC_URL = '/static/'  # 为了让浏览器能直接访问服务器上的静态文件，利用映射关系,浏览器输入(~/static/collected_static/)就可以访问
+# STATIC_URL在本地电脑时，可以使用默认的名字即(/static/)，但一旦部署服务器需要修改里面的内容(任意即可)
+
+# STATIC_ROOT = os.path.join(BASE_DIR,"collected_static")
+# STATIC_ROOT是django内置的静态文件(python manage.py collectstatic)的聚合项目(部署的时候才发挥作用)
+# 如果使用STATICFILES_DIRS(建议使用),就可以不使用STATIC_ROOT
+
+STATICFILES_DIRS = [  # 两种情况，可能把静态文件放app内;可能放app外。为了让django知道就采用这种方式
+    os.path.join(BASE_DIR, "collected_static"),
+    os.path.join(BASE_DIR, "website/templates/website"),  # 添加blog静态文件路径路由
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (  # 认证类
