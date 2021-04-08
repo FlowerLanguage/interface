@@ -73,6 +73,9 @@ def get_movie_simply(year_url):
 
 
 def get_movie_details(url):
+    """
+    后续有空，需要解密猫眼的字符串加密方式,现暂不处理
+    """
     header1 = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
         'Referer': 'http://piaofang.maoyan.com/mob/rank'
@@ -85,23 +88,37 @@ def get_and_post(year_url):
     """
     传入需要爬取的年份url，调用get_movie_simply，获取电影信息，并发送到服务器
     """
+    headers2 = {
+        'Authorization': 'Token 9345eca2ef271fd25dcec1b6e5f6ab3759836c09',
+        'Content-Type': 'application/json'
+    }
     for i in year_url:
         year = i.split('id=')[1]  # 提取爬取的年份具体数字
-        post_url = "http://127.0.0.1:8000/movie/{}".format(year)  # 根据年份构造对应的服务器地址
+        if year == '0':
+            year = 'whole'  # 目标网站作了替换，全部对应的是id=0.因此需改成和自己服务器上对应的目标地址，改为whole
+
+        post_url = "http://60.205.201.200/movie/{}/".format(year)  # 根据年份构造对应的服务器地址
 
         simple, detail_urls = get_movie_simply(i)  # 调用函数获取当年所有电影简要信息以及每个电影的详情页
 
         data = pd.DataFrame(simple)  # 将提取的列表转换为DataFrame对象，方便转换
+
         data.columns = ['name', 'box', 'avg_fare', 'avg_players', 'url']  # 更改列名
+        data['box'][data['box'] == '-'] = 0  # 网站上可能存在一些字段没有数据，显示为-，需要处理替换为0
+        data['avg_fare'][data['avg_fare'] == '-'] = 0
+        data['avg_players'][data['avg_players'] == '-'] = 0
+        data['avg_players'][data['avg_players'] == '-'] = 'http://piaofang.maoyan.com/movie/344264'
         data = data.to_json(orient='records')  # 转换为字典
 
         logging.info('start post movie({}) data!'.format(year))
 
+        res = requests.post(post_url, headers=headers2, data=data)
+        print(res)
+        logging.info('post result information is {}!'.format(res))
+
         logging.info('data size is {}kb!'.format(sys.getsizeof(data) / 1024.))
 
         logging.info('end post movie data!')
-
-        break
 
 
 def dispatch():

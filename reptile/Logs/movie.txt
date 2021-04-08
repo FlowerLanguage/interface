@@ -1,0 +1,75 @@
+2021-04-08 11:34:07,946 - crawl_movie.py[Line:128] - INFO start function!
+2021-04-08 11:34:07,947 - crawl_movie.py[Line:25] - INFO start get all years_url!
+2021-04-08 11:34:09,440 - crawl_movie.py[Line:54] - INFO start get movie information(http://piaofang.maoyan.com/mdb/rank/query?type=0&id=2020)
+2021-04-08 11:34:10,563 - crawl_movie.py[Line:71] - INFO end get movie information!
+2021-04-08 11:34:10,574 - crawl_movie.py[Line:113] - INFO start post movie(2020) data!
+2021-04-08 11:34:12,664 - crawl_movie.py[Line:117] - INFO post result information is <Response [200]>!
+2021-04-08 11:34:12,665 - crawl_movie.py[Line:119] - INFO data size is 38.8095703125kb!
+2021-04-08 11:34:12,665 - crawl_movie.py[Line:121] - INFO end post movie data!
+2021-04-08 11:34:12,667 - crawl_movie.py[Line:54] - INFO start get movie information(http://piaofang.maoyan.com/mdb/rank/query?type=0&id=2019)
+2021-04-08 11:34:13,604 - crawl_movie.py[Line:71] - INFO end get movie information!
+2021-04-08 11:34:13,624 - crawl_movie.py[Line:113] - INFO start post movie(2019) data!
+2021-04-08 11:34:15,941 - crawl_movie.py[Line:117] - INFO post result information is <Response [200]>!
+2021-04-08 11:34:15,941 - crawl_movie.py[Line:119] - INFO data size is 41.736328125kb!
+2021-04-08 11:34:15,942 - crawl_movie.py[Line:121] - INFO end post movie data!
+2021-04-08 11:34:15,942 - crawl_movie.py[Line:54] - INFO start get movie information(http://piaofang.maoyan.com/mdb/rank/query?type=0&id=2018)
+2021-04-08 11:34:16,965 - crawl_movie.py[Line:71] - INFO end get movie information!
+2021-04-08 11:34:16,973 - crawl_movie.py[Line:113] - INFO start post movie(2018) data!
+2021-04-08 11:34:19,557 - crawl_movie.py[Line:117] - INFO post result information is <Response [200]>!
+2021-04-08 11:34:19,557 - crawl_movie.py[Line:119] - INFO data size is 41.56640625kb!
+2021-04-08 11:34:19,557 - crawl_movie.py[Line:121] - INFO end post movie data!
+2021-04-08 11:34:19,558 - crawl_movie.py[Line:54] - INFO start get movie information(http://piaofang.maoyan.com/mdb/rank/query?type=0&id=2017)
+2021-04-08 11:34:20,634 - crawl_movie.py[Line:71] - INFO end get movie information!
+2021-04-08 11:34:20,641 - crawl_movie.py[Line:113] - INFO start post movie(2017) data!
+2021-04-08 11:34:23,296 - crawl_movie.py[Line:117] - INFO post result information is <Response [200]>!
+2021-04-08 11:34:23,296 - crawl_movie.py[Line:119] - INFO data size is 41.5546875kb!
+2021-04-08 11:34:23,296 - crawl_movie.py[Line:121] - INFO end post movie data!
+2021-04-08 11:34:23,297 - crawl_movie.py[Line:54] - INFO start get movie information(http://piaofang.maoyan.com/mdb/rank/query?type=0&id=2016)
+2021-04-08 11:34:24,609 - crawl_movie.py[Line:71] - INFO end get movie information!
+2021-04-08 11:34:24,616 - crawl_movie.py[Line:113] - INFO start post movie(2016) data!
+2021-04-08 11:34:26,847 - crawl_movie.py[Line:117] - INFO post result information is <Response [200]>!
+2021-04-08 11:34:26,847 - crawl_movie.py[Line:119] - INFO data size is 41.9912109375kb!
+2021-04-08 11:34:26,847 - crawl_movie.py[Line:121] - INFO end post movie data!
+2021-04-08 11:34:26,847 - crawl_movie.py[Line:54] - INFO start get movie information(http://piaofang.maoyan.com/mdb/rank/query?type=0&id=2015)
+2021-04-08 11:34:27,722 - crawl_movie.py[Line:71] - INFO end get movie information!
+2021-04-08 11:34:27,730 - crawl_movie.py[Line:113] - INFO start post movie(2015) data!
+2021-04-08 11:34:29,354 - crawl_movie.py[Line:117] - INFO post result information is <Response [200]>!
+2021-04-08 11:34:29,354 - crawl_movie.py[Line:119] - INFO data size is 40.9765625kb!
+2021-04-08 11:34:29,354 - crawl_movie.py[Line:121] - INFO end post movie data!
+2021-04-08 11:34:29,354 - crawl_movie.py[Line:54] - INFO start get movie information(http://piaofang.maoyan.com/mdb/rank/query?type=0&id=2014)
+2021-04-08 11:34:29,655 - crawl_movie.py[Line:71] - INFO end get movie information!
+2021-04-08 11:34:29,662 - crawl_movie.py[Line:113] - INFO start post movie(2014) data!
+2021-04-08 11:34:31,551 - crawl_movie.py[Line:117] - INFO post result information is <Response [200]>!
+2021-04-08 11:34:31,551 - crawl_movie.py[Line:119] - INFO data size is 41.2060546875kb!
+2021-04-08 11:34:31,551 - crawl_movie.py[Line:121] - INFO end post movie data!
+2021-04-08 11:34:31,552 - crawl_movie.py[Line:54] - INFO start get movie information(http://piaofang.maoyan.com/mdb/rank/query?type=0&id=2013)
+2021-04-08 11:34:31,967 - crawl_movie.py[Line:71] - INFO end get movie information!
+2021-04-08 11:34:31,978 - crawl_movie.py[Line:113] - INFO start post movie(2013) data!
+2021-04-08 11:34:33,456 - crawl_movie.py[Line:117] - INFO post result information is <Response [200]>!
+2021-04-08 11:34:33,456 - crawl_movie.py[Line:119] - INFO data size is 40.4267578125kb!
+2021-04-08 11:34:33,456 - crawl_movie.py[Line:121] - INFO end post movie data!
+2021-04-08 11:34:33,456 - crawl_movie.py[Line:54] - INFO start get movie information(http://piaofang.maoyan.com/mdb/rank/query?type=0&id=2012)
+2021-04-08 11:34:33,759 - crawl_movie.py[Line:71] - INFO end get movie information!
+2021-04-08 11:34:33,766 - crawl_movie.py[Line:113] - INFO start post movie(2012) data!
+2021-04-08 11:34:35,281 - crawl_movie.py[Line:117] - INFO post result information is <Response [200]>!
+2021-04-08 11:34:35,281 - crawl_movie.py[Line:119] - INFO data size is 39.8232421875kb!
+2021-04-08 11:34:35,281 - crawl_movie.py[Line:121] - INFO end post movie data!
+2021-04-08 11:34:35,282 - crawl_movie.py[Line:54] - INFO start get movie information(http://piaofang.maoyan.com/mdb/rank/query?type=0&id=2011)
+2021-04-08 11:34:35,657 - crawl_movie.py[Line:71] - INFO end get movie information!
+2021-04-08 11:34:35,667 - crawl_movie.py[Line:113] - INFO start post movie(2011) data!
+2021-04-08 11:34:37,160 - crawl_movie.py[Line:117] - INFO post result information is <Response [200]>!
+2021-04-08 11:34:37,160 - crawl_movie.py[Line:119] - INFO data size is 39.935546875kb!
+2021-04-08 11:34:37,160 - crawl_movie.py[Line:121] - INFO end post movie data!
+2021-04-08 11:34:37,161 - crawl_movie.py[Line:54] - INFO start get movie information(http://piaofang.maoyan.com/mdb/rank/query?type=0&id=0)
+2021-04-08 11:34:37,364 - crawl_movie.py[Line:71] - INFO end get movie information!
+2021-04-08 11:34:37,371 - crawl_movie.py[Line:113] - INFO start post movie(whole) data!
+2021-04-08 11:34:38,852 - crawl_movie.py[Line:117] - INFO post result information is <Response [200]>!
+2021-04-08 11:34:38,852 - crawl_movie.py[Line:119] - INFO data size is 42.43359375kb!
+2021-04-08 11:34:38,852 - crawl_movie.py[Line:121] - INFO end post movie data!
+2021-04-08 11:34:38,852 - crawl_movie.py[Line:54] - INFO start get movie information(http://piaofang.maoyan.com/mdb/rank/query?type=0&id=2021)
+2021-04-08 11:34:39,059 - crawl_movie.py[Line:71] - INFO end get movie information!
+2021-04-08 11:34:39,077 - crawl_movie.py[Line:113] - INFO start post movie(2021) data!
+2021-04-08 11:34:40,460 - crawl_movie.py[Line:117] - INFO post result information is <Response [200]>!
+2021-04-08 11:34:40,460 - crawl_movie.py[Line:119] - INFO data size is 36.3916015625kb!
+2021-04-08 11:34:40,460 - crawl_movie.py[Line:121] - INFO end post movie data!
+2021-04-08 11:34:40,460 - crawl_movie.py[Line:132] - INFO end function!
