@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('foreign_currency.urls')),
     path('', include('movie.urls')),
     path('', include('house_price.urls')),
+    path('',include('account.urls')),
 ]

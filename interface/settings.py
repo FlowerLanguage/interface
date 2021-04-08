@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'foreign_currency',
     'movie',
     'house_price',
+    'account',
 
 ]
 
