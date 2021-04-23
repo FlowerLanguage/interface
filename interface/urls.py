@@ -16,16 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.documentation import include_docs_urls
+from django.views.generic.base import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('docs/', include_docs_urls(title='Api Document')),
 
-    path('', include('lightnovel.urls')),
-    path('', include('foreign_currency.urls')),
-    path('', include('movie.urls')),
-    path('', include('house_price.urls')),
-    path('', include('account.urls')),
-
-    path('', include('website.urls')),
+    # path('', include('lightnovel.urls')),
+    # path('', include('foreign_currency.urls')),
+    # path('', include('movie.urls')),
+    # path('', include('house_price.urls')),
+    # path('', include('account.urls')),
+    # 
+    # path('', include('website.urls')),
+    path('', TemplateView.as_view(template_name='index.html'))
 ]

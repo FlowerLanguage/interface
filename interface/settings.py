@@ -65,7 +65,7 @@ ROOT_URLCONF = 'interface.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'frontend')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -131,13 +131,14 @@ USE_TZ = True
 STATIC_URL = '/static/'  # 为了让浏览器能直接访问服务器上的静态文件，利用映射关系,浏览器输入(~/static/collected_static/)就可以访问
 # STATIC_URL在本地电脑时，可以使用默认的名字即(/static/)，但一旦部署服务器需要修改里面的内容(任意即可)
 
-# STATIC_ROOT = os.path.join(BASE_DIR,"collected_static")
+STATIC_ROOT = os.path.join(BASE_DIR,"static")
 # STATIC_ROOT是django内置的静态文件(python manage.py collectstatic)的聚合项目(部署的时候才发挥作用)
 # 如果使用STATICFILES_DIRS(建议使用),就可以不使用STATIC_ROOT
 
 STATICFILES_DIRS = [  # 两种情况，可能把静态文件放app内;可能放app外。为了让django知道就采用这种方式
     os.path.join(BASE_DIR, "collected_static"),
     os.path.join(BASE_DIR, "website/templates/website"),  # 添加blog静态文件路径路由
+    os.path.join(BASE_DIR,'frontend/static'),
 ]
 
 REST_FRAMEWORK = {
