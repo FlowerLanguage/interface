@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import Login from '../views/login.vue'
 import Home from '../views/Home.vue'
 
-
 Vue.use(VueRouter)
 
 const routes = [
@@ -20,7 +19,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  // mode: 'history',
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 })

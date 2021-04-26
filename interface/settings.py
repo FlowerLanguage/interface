@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'account',
     'website',
 
+    'corsheaders',  # 解决django后端跨域问题
+
 ]
 
 MIDDLEWARE = [
@@ -58,6 +60,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'corsheaders.middleware.CorsMiddleware',  # 解决django后端跨域问题
 ]
 
 ROOT_URLCONF = 'interface.urls'
@@ -161,3 +165,5 @@ REST_FRAMEWORK = {
     'ALLOWED_VERSIONS': ['v1', 'v2'],  # 允许的版本
     'VERSION_PARAM': 'version'  # URL中获取值的key
 }
+
+CORS_ORIGIN_ALLOW_ALL = True  # 解决django后端跨域问题

@@ -22,12 +22,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('docs/', include_docs_urls(title='Api Document')),
 
-    # path('', include('lightnovel.urls')),
-    # path('', include('foreign_currency.urls')),
-    # path('', include('movie.urls')),
-    # path('', include('house_price.urls')),
-    # path('', include('account.urls')),
-    # 
-    # path('', include('website.urls')),
+    path('', include('lightnovel.urls')),
+    path('', include('foreign_currency.urls')),
+    path('', include('movie.urls')),
+    path('', include('house_price.urls')),
+    path('', include('account.urls')),
+
+    path('', include('website.urls')),
     path('', TemplateView.as_view(template_name='index.html'))
 ]
