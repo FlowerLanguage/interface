@@ -1,12 +1,12 @@
 <template>
     <div>
-        <table class="grid">
+        <table class="light_grid">
         <caption>热门轻小说排行榜</caption>
         <tr>
             <td>
-                <div v-for="item in sb" class="content">
-                    <img :src="item.cover" alt="" class="img">
-                    <div class="detail">
+                <div v-for="item in sb" class="light_content">
+                    <img :src="item.cover" alt="" class="light_img">
+                    <div class="light_detail">
                         <b>{{ item.title }}</b>
                         <p>作者:{{ item.author }}/分类:{{ item.classification }}/状态:{{ item.status }}</p>
                         <p>最后更新:{{ item.update }}</p>
@@ -16,11 +16,11 @@
             </td>
         </tr>
     </table>
-    <div class="pages">
-        <div class="previous" @click="previousPage">
+    <div class="light_pages">
+        <div class="light_previous" @click="previousPage">
             上一页
         </div>
-        <div class="next" @click="nextPage">
+        <div class="light_next" @click="nextPage">
             下一页
         </div>
     </div>
@@ -28,7 +28,7 @@
 </template>
 
 <style>
-    .grid {
+    .light_grid {
         border-collapse: collapse;
         border: 1px solid #a4cded;
         padding: 3px;
@@ -36,7 +36,7 @@
         display: table;
     }
 
-    .grid caption {
+    .light_grid caption {
         border: 1px solid #a4cded;
         background: #e9f1f8;
         vertical-align: middle;
@@ -49,32 +49,32 @@
         padding-bottom: 5px;
     }
 
-    .content {
+    .light_content {
         margin-bottom: 15px;
         float: left;
         width: 480px;
         margin-right: 15px;
     }
 
-    .content .img {
+    .light_content .light_img {
         width: 90px;
         height: 130px;
         float: left;
     }
 
-    .detail {
+    .light_detail {
         margin-left: 100px;
         height: 130px;
         text-align: left;
         display: block;
     }
 
-    .detail b {
+    .light_detail b {
         font-size: 13px;
         font-weight: bold;
     }
 
-    .detail p {
+    .light_detail p {
         line-height: 50%;
         display: block;
         margin-block-start: 0.5em;
@@ -82,16 +82,16 @@
         margin-inline-start: 0px;
         margin-inline-end: 0px;
     }
-    .pages{
+    .light_pages{
         padding: 5px 0px;
         margin-bottom: 60px;
         font-weight: bold;
     }
-    .previous{
+    .light_previous{
         float: left;
         cursor: pointer;
     }
-    .next{
+    .light_next{
         float: right;
         cursor: pointer;
     }
@@ -113,14 +113,11 @@
             let _this = this
             Msg.$on('data', function (res) {
                 _this.sb = res
-                console.log(res)
             })
             Msg.$on('next',function (res){
-                console.log(res)
                 _this.next=res
             })
             Msg.$on('previous',function (res){
-                console.log(res)
                 _this.previous=res
             })
         },

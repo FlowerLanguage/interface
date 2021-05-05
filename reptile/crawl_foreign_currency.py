@@ -26,28 +26,13 @@ async def get_foreign_type():
     """
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36',
-        'Cookie': 'adBlockerNewUserDomains=1606294439;'
-                  ' __gads=ID=6b57c5bf63ac5b10:T=1606294443:S=ALNI_MbYmfzMLtICWJssMRSActIuNLKDzw;'
-                  ' _ga=GA1.2.1394063966.1606294442; _gid=GA1.2.1272127958.1606294444; adsFreeSalePopUp=3;'
-                  ' __atuvc=3%7C48; SideBlockUser=a%3A2%3A%7Bs%3A10%3A%22stack_size%22%3Ba%3A1%3A%7Bs%3A11%3A%'
-                  '22last_quotes%22%3Bi%3A8%3B%7Ds%3A6%3A%22stacks%22%3Ba%3A1%3A%7Bs%3A11%3A%22last_quotes%22%3Ba%'
-                  '3A2%3A%7Bi%3A0%3Ba%3A3%3A%7Bs%3A7%3A%22pair_ID%22%3Bs%3A1%3A%221%22%3Bs%3A10%3A%22pair_title%22%'
-                  '3Bs%3A13%3A%22%E6%AC%A7%E5%85%83+%E7%BE%8E%E5%85%83%22%3Bs%3A9%3A%22pair_link%22%3Bs%3A19%3A%22%'
-                  '2Fcurrencies%2Feur-usd%22%3B%7Di%3A1%3Ba%3A3%3A%7Bs%3A7%3A%22pair_ID%22%3Bs%3A4%3A%226597%22%3Bs%'
-                  '3A10%3A%22pair_title%22%3Bs%3A0%3A%22%22%3Bs%3A9%3A%22pair_link%22%3Bs%3A19%3A%22%2Fequities%2'
-                  'Frio-tinto%22%3B%7D%7D%7D%7D; PHPSESSID=asmf2290sn9t4fvmka92utct9q; geoC=CN; prebid_session=0; '
-                  'StickySession=id.50437178081.504cn.investing.com; logglytrackingsession=74dfa97f-a715-4d81-bf70-c5130399dbe8;'
-                  ' Hm_lvt_a1e3d50107c2a0e021d734fe76f85914=1606294445,1606353644; prebid_page=0; outbrain_cid_fetch=true;'
-                  ' OptanonAlertBoxClosed=2020-11-26T03:09:08.397Z; nyxDorf=MDQ3ZjVmP300ZT0xYi8zMjJjYyZjZWBkYGE%3D;'
-                  ' OptanonConsent=isIABGlobal=false&datestamp=Thu+Nov+26+2020+11%3A09%3A09+GMT%'
-                  '2B0800+(%E4%B8%AD%E5%9B%BD%E6%A0%87%E5%87%86%E6%97%B6%E9%97%B4)&version=6.7.0&hosts=&'
-                  'landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&'
-                  'AwaitingReconsent=false&geolocation=CN%3BBJ; Hm_lpvt_a1e3d50107c2a0e021d734fe76f85914=1606360150'
+        'Cookie': 'logglytrackingsession=8f19c497-c92c-47e5-a758-30d4b9718ba4; adBlockerNewUserDomains=1606294439; __gads=ID=6b57c5bf63ac5b10:T=1606294443:S=ALNI_MbYmfzMLtICWJssMRSActIuNLKDzw; _ga=GA1.2.1394063966.1606294442; OptanonAlertBoxClosed=2021-01-15T07:47:21.720Z; OptanonConsent=isIABGlobal=false&datestamp=Fri+Jan+15+2021+15%3A47%3A22+GMT%2B0800+(%E4%B8%AD%E5%9B%BD%E6%A0%87%E5%87%86%E6%97%B6%E9%97%B4)&version=6.7.0&hosts=&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&AwaitingReconsent=false&geolocation=CN%3BBJ; protectedMedia=2; __cfduid=d98a47af86e5c7c519900492ce96a7b541620032509; SideBlockUser=a%3A2%3A%7Bs%3A10%3A%22stack_size%22%3Ba%3A1%3A%7Bs%3A11%3A%22last_quotes%22%3Bi%3A8%3B%7Ds%3A6%3A%22stacks%22%3Ba%3A1%3A%7Bs%3A11%3A%22last_quotes%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A3%3A%7Bs%3A7%3A%22pair_ID%22%3Bs%3A1%3A%221%22%3Bs%3A10%3A%22pair_title%22%3Bs%3A13%3A%22%E6%AC%A7%E5%85%83+%E7%BE%8E%E5%85%83%22%3Bs%3A9%3A%22pair_link%22%3Bs%3A19%3A%22%2Fcurrencies%2Feur-usd%22%3B%7D%7D%7D%7D; udid=41f4be753526fed9d24774cf30efda17; __cflb=0H28uxmf5JNxjDUC5huTKPtuPTatseeqAnzX9uuontt; _gid=GA1.2.1203536651.1620033326; cf_chl_2=e2bdff2f3b38e32; cf_chl_prog=x10; cf_clearance=f51099c872bc409b39f7c65367e59e08de39d533-1620109669-0-150; PHPSESSID=ga2hff6n0bt2p85383paerbfbd; geoC=CN; StickySession=id.52839463781.555.cn.investing.com; smd=41f4be753526fed9d24774cf30efda17-1620109669; Hm_lvt_a1e3d50107c2a0e021d734fe76f85914=1620033326,1620109671; __cf_bm=789236d87077547a5eb4b4700755568896a9757b-1620109673-1800-AdefKCWb6ty4joxBynJcFLbplympWwXrDae2mrfIHjaVrAZE0gfhqA9yku2XtutmZ/RVCw3lFOx6rPorZbAwGUNm55EG7Qlt5AKSltSdnmqd9ExcXA/sBtY3ZsUKOqMI5A==; adsFreeSalePopUp=3; nyxDorf=NzBhNmM1MTgwbD0ybzU2PDNoM200NTA6NTcyOzVjN2llNj9pYm5iYGM0bmdlZTA0P2o3ZDFvYjhnbmc5MjQ0ZzdnYThjMjE%2FMGE9Zw%3D%3D; _gat=1; _gat_allSitesTracker=1; Hm_lpvt_a1e3d50107c2a0e021d734fe76f85914=1620110488'
     }
     url_home = 'https://cn.investing.com/currencies/'  # 主页
     session = aiohttp.ClientSession()
     res = await session.get(url_home, headers=headers)
     res = await res.text()
+    print(res)
     res = BeautifulSoup(res, 'html.parser')
     table = res.find('table', class_='genTbl closedTbl crossRatesTbl')
     tbody = table.find('tbody')
@@ -224,13 +209,14 @@ def dispatch_foreign_currency():
     总的调度函数，控制爬取外汇的逻辑
     """
     logging.info('Start scrapping')
-    foeign_type = asyncio.get_event_loop().run_until_complete(get_foreign_type())  # 调用获取外汇类型的函数，获取到有多少种外汇类型
-    asyncio.get_event_loop().run_until_complete(dispatch_tasks(foeign_type))  # 根据外汇类型函数的结果，进行总事件循环
-    logging.info('End scrapping')
+    foreign_type = asyncio.get_event_loop().run_until_complete(get_foreign_type())  # 调用获取外汇类型的函数，获取到有多少种外汇类型
 
-    logging.info('start post foreign_currency!')
-    post_data()  # 调用保存数据的函数
-    logging.info('end post foreign_currency!')
+    # asyncio.get_event_loop().run_until_complete(dispatch_tasks(foreign_type))  # 根据外汇类型函数的结果，进行总事件循环
+    # logging.info('End scrapping')
+
+    # logging.info('start post foreign_currency!')
+    # post_data()  # 调用保存数据的函数
+    # logging.info('end post foreign_currency!')
 
 
 if __name__ == '__main__':

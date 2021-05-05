@@ -26,3 +26,6 @@
 2021-04-07 16:09:26,203 - connectionpool.py[Line: 227] - DEBUG Starting new HTTP connection (1): 60.205.201.200:80
 2021-04-07 16:11:35,138 - connectionpool.py[Line: 452] - DEBUG http://60.205.201.200:80 "POST /foreign_currency/ HTTP/1.1" 200 5933747
 2021-04-07 16:11:42,918 - crawl_foreign_currency.py[Line: 233] - INFO end post foreign_currency!
+2021-05-04 14:37:10,027 - crawl_foreign_currency.py[Line: 226] - INFO Start scrapping
+2021-05-04 14:40:57,758 - crawl_foreign_currency.py[Line: 227] - INFO Start scrapping
+2021-05-04 15:01:34,609 - crawl_foreign_currency.py[Line: 211] - INFO Start scrapping
