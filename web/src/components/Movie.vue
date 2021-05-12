@@ -65,7 +65,7 @@
     }
     .movie_pages{
         padding: 5px 0px;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
         font-weight: bold;
     }
     .movie_previous{
