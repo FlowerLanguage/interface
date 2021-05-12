@@ -29,3 +29,173 @@
 2021-05-04 14:37:10,027 - crawl_foreign_currency.py[Line: 226] - INFO Start scrapping
 2021-05-04 14:40:57,758 - crawl_foreign_currency.py[Line: 227] - INFO Start scrapping
 2021-05-04 15:01:34,609 - crawl_foreign_currency.py[Line: 211] - INFO Start scrapping
+2021-05-11 16:03:45,955 - crawl_foreign_currency.py[Line: 211] - INFO Start scrapping
+2021-05-11 16:04:33,381 - crawl_foreign_currency.py[Line: 213] - INFO Start scrapping
+2021-05-11 16:06:55,831 - crawl_foreign_currency.py[Line: 216] - INFO Start scrapping
+2021-05-11 16:12:30,092 - crawl_foreign_currency.py[Line: 227] - INFO Start scrapping
+2021-05-11 16:17:18,215 - crawl_foreign_currency.py[Line: 216] - INFO Start scrapping
+2021-05-11 16:19:33,933 - crawl_foreign_currency.py[Line: 217] - INFO Start scrapping
+2021-05-11 16:23:01,225 - crawl_foreign_currency.py[Line: 216] - INFO Start scrapping
+2021-05-11 16:23:06,454 - crawl_foreign_currency.py[Line: 215] - INFO Start scrapping
+2021-05-11 16:23:07,055 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002752798DA90>
+2021-05-11 16:25:20,140 - crawl_foreign_currency.py[Line: 222] - INFO Start scrapping
+2021-05-11 16:25:20,793 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001A0E506DB50>
+2021-05-11 16:26:43,194 - crawl_foreign_currency.py[Line: 222] - INFO Start scrapping
+2021-05-11 16:26:43,871 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001B55288DC10>
+2021-05-11 16:27:28,562 - crawl_foreign_currency.py[Line: 222] - INFO Start scrapping
+2021-05-11 16:27:29,214 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000018133AADE20>
+2021-05-11 16:31:04,706 - crawl_foreign_currency.py[Line: 214] - INFO Start scrapping
+2021-05-11 16:31:25,895 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000023C3549DD90>
+2021-05-11 16:32:45,150 - crawl_foreign_currency.py[Line: 214] - INFO Start scrapping
+2021-05-11 16:33:06,421 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000027FD038DAF0>
+2021-05-12 08:33:32,060 - crawl_foreign_currency.py[Line: 223] - INFO Start scrapping
+2021-05-12 08:33:33,766 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002D328E11250>
+2021-05-12 08:36:10,936 - crawl_foreign_currency.py[Line: 224] - INFO Start scrapping
+2021-05-12 08:36:12,229 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000256A1C8CDC0>
+2021-05-12 08:37:05,170 - crawl_foreign_currency.py[Line: 225] - INFO Start scrapping
+2021-05-12 08:37:06,475 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002850F22D700>
+2021-05-12 08:39:17,305 - crawl_foreign_currency.py[Line: 226] - INFO Start scrapping
+2021-05-12 08:39:18,618 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000215E1DD1310>
+2021-05-12 08:39:40,836 - crawl_foreign_currency.py[Line: 227] - INFO Start scrapping
+2021-05-12 08:39:42,121 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001B2E0B814F0>
+2021-05-12 08:40:17,327 - crawl_foreign_currency.py[Line: 228] - INFO Start scrapping
+2021-05-12 08:40:18,644 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000021EDF13DE50>
+2021-05-12 08:41:57,727 - crawl_foreign_currency.py[Line: 232] - INFO Start scrapping
+2021-05-12 08:41:59,066 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000013CDE3DDDC0>
+2021-05-12 08:42:29,537 - crawl_foreign_currency.py[Line: 234] - INFO Start scrapping
+2021-05-12 08:42:30,839 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002BA5804EC70>
+2021-05-12 08:43:34,696 - crawl_foreign_currency.py[Line: 238] - INFO Start scrapping
+2021-05-12 08:43:36,004 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001F73DC1CDF0>
+2021-05-12 08:44:27,134 - crawl_foreign_currency.py[Line: 241] - INFO Start scrapping
+2021-05-12 08:44:28,473 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002644C1EEBB0>
+2021-05-12 08:48:44,407 - crawl_foreign_currency.py[Line: 245] - INFO Start scrapping
+2021-05-12 08:49:13,453 - crawl_foreign_currency.py[Line: 245] - INFO Start scrapping
+2021-05-12 08:49:48,785 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:51:12,982 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:54:14,686 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:54:41,701 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:54:43,971 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000028B6D35ED90>
+2021-05-12 08:54:43,971 - base_events.py[Line: 1707] - ERROR Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x0000028B6D39D400>, 159314.109)]']
+connector: <aiohttp.connector.TCPConnector object at 0x0000028B6D35E9D0>
+2021-05-12 08:55:08,770 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:55:32,672 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:55:34,930 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002032819EEE0>
+2021-05-12 08:55:34,930 - base_events.py[Line: 1707] - ERROR Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x00000203281DE0A0>, 159365.109)]']
+connector: <aiohttp.connector.TCPConnector object at 0x000002032819ECD0>
+2021-05-12 08:56:26,690 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:56:28,038 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002E4FF0EDAC0>
+2021-05-12 08:56:58,941 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:57:00,272 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002591B99FC40>
+2021-05-12 08:57:09,074 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:57:10,597 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001BEF800EE80>
+2021-05-12 08:57:20,119 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:57:21,434 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000020BDF88EBB0>
+2021-05-12 08:57:34,828 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:57:36,307 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001834EB7EBE0>
+2021-05-12 08:57:53,580 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:58:16,201 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:58:17,486 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001CC713EEFD0>
+2021-05-12 08:58:39,776 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:59:01,481 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:59:04,148 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000025A2C46FBB0>
+2021-05-12 08:59:20,716 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 08:59:22,095 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000246A66BFCA0>
+2021-05-12 08:59:43,311 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:01:48,425 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:02:14,102 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:02:15,572 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002432BD0ECA0>
+2021-05-12 09:02:43,135 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:02:44,606 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001CC614AECA0>
+2021-05-12 09:02:53,948 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:02:55,370 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001B9411EED30>
+2021-05-12 09:03:48,514 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:03:50,042 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000017BF8ECED60>
+2021-05-12 09:03:58,363 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:03:59,891 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000222D730EE50>
+2021-05-12 09:04:11,459 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:04:12,976 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001F63091DCD0>
+2021-05-12 09:04:30,200 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:04:31,809 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001A9A9E6EBB0>
+2021-05-12 09:04:38,290 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:04:39,810 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001E7A340EC40>
+2021-05-12 09:05:10,316 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:05:57,130 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:06:33,829 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:06:35,359 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001638DDDD940>
+2021-05-12 09:07:16,776 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:07:41,550 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:08:02,680 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:08:04,239 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001BBD6A3ED60>
+2021-05-12 09:08:16,312 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:08:17,847 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001E3A223EFD0>
+2021-05-12 09:09:12,436 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:09:13,985 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001EAB8C3ED90>
+2021-05-12 09:09:20,395 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:09:21,897 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001997EB5DDF0>
+2021-05-12 09:16:58,070 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:17:17,615 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:17:19,321 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000018D5EB9CFD0>
+2021-05-12 09:18:45,870 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:18:47,171 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000187DCDAEC40>
+2021-05-12 09:21:08,195 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:21:10,328 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001B37C7BE9D0>
+2021-05-12 09:21:10,344 - base_events.py[Line: 1707] - ERROR Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x000001B37C7FF040>, 160900.515)]']
+connector: <aiohttp.connector.TCPConnector object at 0x000001B37C7BE610>
+2021-05-12 09:21:30,462 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:21:32,632 - base_events.py[Line: 1707] - ERROR Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000002374448DF40>
+2021-05-12 09:21:32,632 - base_events.py[Line: 1707] - ERROR Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x00000237454A0040>, 160922.812)]']
+connector: <aiohttp.connector.TCPConnector object at 0x000002374448DB80>
+2021-05-12 09:23:10,853 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:23:27,153 - crawl_foreign_currency.py[Line: 240] - INFO Start scrapping
+2021-05-12 09:24:58,408 - crawl_foreign_currency.py[Line: 241] - INFO Start scrapping
+2021-05-12 09:25:39,949 - crawl_foreign_currency.py[Line: 242] - INFO Start scrapping
+2021-05-12 09:26:57,890 - crawl_foreign_currency.py[Line: 242] - INFO Start scrapping
+2021-05-12 09:29:29,553 - crawl_foreign_currency.py[Line: 246] - INFO Start scrapping
+2021-05-12 09:30:33,102 - crawl_foreign_currency.py[Line: 249] - INFO Start scrapping

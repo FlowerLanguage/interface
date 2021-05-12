@@ -5,3 +5,10 @@
 2021-03-31 14:16:14,709 - crawl_house_price.py[Line:64] - INFO data size is 31.03125kb!
 2021-03-31 14:16:16,073 - crawl_house_price.py[Line:68] - INFO result is <Response [200]>!
 2021-03-31 14:16:16,074 - crawl_house_price.py[Line:69] - INFO end post data!
+2021-05-12 11:12:03,236 - crawl_house_price.py[Line:75] - INFO start function!
+2021-05-12 11:12:03,275 - crawl_house_price.py[Line:20] - INFO start get city information!
+2021-05-12 11:12:04,624 - crawl_house_price.py[Line:44] - INFO end get city information!
+2021-05-12 11:12:04,624 - crawl_house_price.py[Line:58] - INFO start post data!
+2021-05-12 11:12:04,682 - crawl_house_price.py[Line:64] - INFO data size is 31.3818359375kb!
+2021-05-12 11:12:05,586 - crawl_house_price.py[Line:67] - INFO result is <Response [200]>!
+2021-05-12 11:12:05,586 - crawl_house_price.py[Line:68] - INFO end post data!

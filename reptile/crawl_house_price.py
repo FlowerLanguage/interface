@@ -51,10 +51,10 @@ def post_data(params):
     :param params:包含年，月，城市信息
     """
     headers = {
-        'Authorization': 'Token 02915dfb6846cc78ee474939191614f53e35e0bb',
+        'Authorization': 'Token 9345eca2ef271fd25dcec1b6e5f6ab3759836c09',
         'Content-Type': 'application/json'
     }
-    url = 'http://127.0.0.1:8000/house_price/202102/'  # 服务器外汇数据地址
+    url = 'http://60.205.201.200/house_price/202104/'  # 服务器外汇数据地址
     logging.info('start post data!')
     df = pd.DataFrame(params[2])
     df.columns = ['city', 'avg_unit_price', 'chain_comparison', 'year_on_year']
