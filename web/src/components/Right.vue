@@ -1,6 +1,6 @@
 <template>
     <div class="right">
-        <img v-if="first==true" ref="img" src="../../public/img/1.jpg" alt="春物">
+        <img v-if="first==true" ref="img" src="../../public/img/house_price.jpg" alt="春物">
         <div v-if="key=='hot_novel'">
             <Light></Light>
         </div>
