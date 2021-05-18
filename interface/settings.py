@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'house_price',
     'account',
     'website',
+    'book',
 
     'corsheaders',  # 解决django后端跨域问题
 

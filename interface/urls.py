@@ -27,6 +27,7 @@ urlpatterns = [
     path('', include('movie.urls')),
     path('', include('house_price.urls')),
     path('', include('account.urls')),
+    path('', include('book.urls')),
 
     path('', include('website.urls')),
     path('', TemplateView.as_view(template_name='index.html'))
