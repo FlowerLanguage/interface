@@ -12,4 +12,4 @@ class ForeignCurrencyListView(view.ListView):
 
 class ForeignCurrencyDetailView(view.DetailView):
     def __init__(self):
-        super().__init__(ForeignCurrency, ForeignCurrencySerializer)
+        super().__init__(ForeignCurrency.objects.all(), ForeignCurrencySerializer)
