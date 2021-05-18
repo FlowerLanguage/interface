@@ -184,9 +184,6 @@ def back_up(year):
         sql_backup = 'create table {}'.format(origin) + '_backup' + ' select * from {}'.format(origin)
         logging.info('sql_backup')
         cursor.execute(sql_backup)
-        sql_clean = 'TRUNCATE TABLE {}'.format(origin)
-        logging.info(sql_clean)
-        cursor.execute(sql_clean)
     else:
         sql_delete = 'DROP TABLE {}'.format(origin) + '_backup'
         logging.info(sql_delete)
@@ -194,6 +191,9 @@ def back_up(year):
         sql_backup = 'create table {}'.format(origin) + '_backup' + ' select * from {}'.format(origin)
         logging.info(sql_backup)
         cursor.execute(sql_backup)
+    sql_clean = 'TRUNCATE TABLE {}'.format(origin)
+    logging.info(sql_clean)
+    cursor.execute(sql_clean)
     db.commit()
     cursor.close()
     db.close()
