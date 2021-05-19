@@ -63,6 +63,9 @@
                         Msg.$emit('data', _this.result)
                         Msg.$emit('next', res['data']['next'])
                         Msg.$emit('previous', res['data']['previous'])
+                    }).catch(function (error){
+                        _this.$message.error('请重新登录')
+                        _this.$router.push('/')
                     })
                 }else if(res=='house_price'){  // 包含房价内容
                     let url = 'http://60.205.201.200/' + res + '/' + '202102' + '/'  // 利用left组件传递的值构造目标服务器的地址
@@ -71,14 +74,21 @@
                         Msg.$emit('data', _this.result)
                         Msg.$emit('next', res['data']['next'])
                         Msg.$emit('previous', res['data']['previous'])
+                    }).catch(function (error){
+                        _this.$message.error('请重新登录')
+                        _this.$router.push('/')
                     })
                 }else { // 包含轻小说、外汇等内容
                     let url = 'http://60.205.201.200/' + res + '/'  // 利用left组件传递的值构造目标服务器的地址
                     _this.$http.get(url, {headers: headers}).then(function (res) {
+                        console.log(res)
                         _this.result = res['data']['results']
                         Msg.$emit('data', _this.result)
                         Msg.$emit('next', res['data']['next'])
                         Msg.$emit('previous', res['data']['previous'])
+                    }).catch(function (error){
+                        _this.$message.error('请重新登录')
+                        _this.$router.push('/')
                     })
                 }
             })
@@ -92,7 +102,10 @@
                     Msg.$emit('data', _this.result)
                     Msg.$emit('next', res['data']['next'])
                     Msg.$emit('previous', res['data']['previous'])
-                })
+                }).catch(function (error){
+                        _this.$message.error('请重新登录')
+                        _this.$router.push('/')
+                    })
             })
             Msg.$on('year',function (year){
                 let headers = {
@@ -105,6 +118,9 @@
                         Msg.$emit('data', _this.result)
                         Msg.$emit('next', res['data']['next'])
                         Msg.$emit('previous', res['data']['previous'])
+                    }).catch(function (error){
+                        _this.$message.error('请重新登录')
+                        _this.$router.push('/')
                     })
             })
         },
