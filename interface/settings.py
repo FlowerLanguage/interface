@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'account',
     'website',
     'book',
+    'video',
 
     'corsheaders',  # 解决django后端跨域问题
 
