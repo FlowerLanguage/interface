@@ -13,6 +13,9 @@
         <div v-if="key=='house_price'">
             <House></House>
         </div>
+        <div v-if="key=='book'">
+            <Book></Book>
+        </div>
         <div v-if="first==false" class="download" @click="downloadJson">
             <b>下载</b>
         </div>
@@ -37,6 +40,7 @@
     import Foreign from './Foreign'
     import Movie from './Movie'
     import House from './House'
+    import Book from './Book'
 
     export default {
         data() {
@@ -78,10 +82,9 @@
                         _this.$message.error('请重新登录')
                         _this.$router.push('/')
                     })
-                }else { // 包含轻小说、外汇等内容
+                }else { // 包含轻小说、外汇、名著等内容
                     let url = 'http://60.205.201.200/' + res + '/'  // 利用left组件传递的值构造目标服务器的地址
                     _this.$http.get(url, {headers: headers}).then(function (res) {
-                        console.log(res)
                         _this.result = res['data']['results']
                         Msg.$emit('data', _this.result)
                         Msg.$emit('next', res['data']['next'])
@@ -145,7 +148,8 @@
             Light,
             Foreign,
             Movie,
-            House
+            House,
+            Book
         }
 
     }

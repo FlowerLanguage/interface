@@ -8,6 +8,7 @@
             <li @click="getForeignCurrency">外汇</li>
             <li @click="getMovie">电影</li>
             <li @click="getHousePrice">房价</li>
+            <li @click="getBook">名著</li>
         </ul>
     </div>
 </template>
@@ -65,6 +66,15 @@
                 let token = this.isExistsToken()  // 调用判断token的函数
                 if (token) {
                     Msg.$emit('type', 'house_price')
+                } else {
+                    _this.$router.push({path: '/'})  // 跳转到登录页面进行登录
+                }
+            },
+            getBook: function () {
+                let _this = this
+                let token = this.isExistsToken()  // 调用判断token的函数
+                if (token) {
+                    Msg.$emit('type', 'book')
                 } else {
                     _this.$router.push({path: '/'})  // 跳转到登录页面进行登录
                 }
