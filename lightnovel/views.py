@@ -12,7 +12,8 @@ class HotNovelListView(view.ListView):
 
 class UserOperationListView(view.ListView):
     def __init__(self):
-        super().__init__(UserOperation.objects.all(), UserOperationSerializer, ['id', 'username', 'novel_id'])
+        super().__init__(UserOperation.objects.all(), UserOperationSerializer,
+                         ['id', 'username', 'novel_id', 'read', 'collection', 'comment', 'download'])
 
 
 class UserOperationDetailView(view.DetailView):
