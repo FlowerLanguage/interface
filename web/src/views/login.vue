@@ -79,6 +79,7 @@
                         _this.$message.success('登录成功');
                         _token = res.data.token;  // 获取登录后取得的token
                         _this.$store.commit('setToken', _token);  // 将获取的token存入store管路的状态中
+                        _this.$store.commit('setId', _user);  // 将获取的userid存入store管路的状态中
                         _this.$router.push({path: '/home'});  // 登录成功后，跳转到主页
                     }).catch(error => {
                         _this.$message.error('请输入正确的账号或密码')

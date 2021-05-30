@@ -7,7 +7,7 @@
                 <div v-for="item in sb" class="light_content">
                     <img :src="item.cover" alt="" class="light_img">
                     <div class="light_detail">
-                        <b>{{ item.title }}</b>
+                        <b @click="enterDetail(item)">{{ item.title }}</b>
                         <p>作者:{{ item.author }}/分类:{{ item.classification }}/状态:{{ item.status }}</p>
                         <p>最后更新:{{ item.update }}</p>
                         <p>长度:{{ item.length }}</p>
@@ -16,16 +16,17 @@
             </td>
         </tr>
     </table>
-    <div class="light_pages">
-        <div class="light_previous" @click="previousPage">
+    <div class="light_pages" >
+        <div class="light_previous" @click="previousPage" ref="previous">
             上一页
         </div>
-        <div class="light_next" @click="nextPage">
+        <div class="light_next" @click="nextPage" ref="next">
             下一页
         </div>
     </div>
     </div>
 </template>
+
 
 <style>
     .light_grid {
@@ -72,6 +73,7 @@
     .light_detail b {
         font-size: 13px;
         font-weight: bold;
+        cursor: pointer;
     }
 
     .light_detail p {
@@ -106,7 +108,9 @@
             return {
                 sb: [],
                 previous:'',
-                next:''
+                next:'',
+                isTurnPrevious:false,
+                isTurnNext:false
             }
         },
         mounted: function () {
@@ -115,10 +119,20 @@
                 _this.sb = res
             })
             Msg.$on('next',function (res){
-                _this.next=res
+                if (res){
+                    _this.$refs.next.style.display=''
+                    _this.next=res
+                }else{
+                    _this.$refs.next.style.display='none'  // 不存在下一页就不显示
+                }
             })
             Msg.$on('previous',function (res){
-                _this.previous=res
+                if (res){
+                    _this.$refs.previous.style.display=''
+                    _this.previous=res
+                }else{
+                    _this.$refs.previous.style.display='none'  // 不存在上一页就不显示
+                }
             })
         },
         methods:{
@@ -129,6 +143,9 @@
             nextPage:function (){
                 Msg.$emit('page',this.next)
                 window.scrollTo(0,0)
+            },
+            enterDetail:function (data){
+                 Msg.$emit('detail', data)
             }
         }
 
