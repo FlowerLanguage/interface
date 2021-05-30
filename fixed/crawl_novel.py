@@ -15,6 +15,11 @@ logging.basicConfig(level=logging.INFO,
 session = requests.Session()  # 创建一个全局Session对象
 
 
+def is_existence_path(path):  # 判断文件价是否存在，不存在就创建
+    if not os.path.exists(path):
+        os.mkdir(path)
+
+
 def construct_main_pages(main_page='https://www.wenku8.net/modules/article/toplist.php?sort=allvisit', start_page=1,
                          end_page=138):
     """
@@ -104,6 +109,7 @@ def get_novel_detail(novel_url):
         nauthor = nauthor.split('：')[1]
         nstatus = content[2].text
         nstatus = nstatus.split('：')[1]
+
         try:  # 有的小说并没有包含下面的全部信息，加容错，如果未找到，都设置为None
             nupdate = content[3].text
             nupdate = nupdate.split('：')[1]
@@ -113,6 +119,19 @@ def get_novel_detail(novel_url):
             nupdate = None
             nlength = None
 
+        try:
+            nread = res.select(
+                '#content > div:nth-child(1) > div:nth-child(6) > div > span:nth-child(1) > fieldset > div > a')
+            nread = nread[0]['href']  # 提取阅读链接
+        except:
+            nread = novel_url  # 提取阅读链接，可能不存在则记录为当前url
+
+        try:
+            ndownload = res.select('#content > div:nth-child(1) > div:nth-child(8) > fieldset > div:nth-child(2) > a')
+            ndownload = ndownload[0]['href']  # 提取下载链接
+        except:
+            ndownload = novel_url  # 提取下载链接,可能不存在则记录为当前url
+
         ncover = div.find_all('tr')[3].find('img')['src']  # 获取到封面地址
         detail['小说名称'] = ntitle
         detail['文库分类'] = nclassification
@@ -121,6 +140,8 @@ def get_novel_detail(novel_url):
         detail['最后更新'] = nupdate
         detail['全文长度'] = nlength
         detail['小说封面'] = ncover
+        detail['阅读'] = nread
+        detail['下载'] = ndownload
         print(detail)
         logging.info('crawl {} success!'.format(novel_url))
         return detail
@@ -139,7 +160,8 @@ def post_data(path):
     }
     url = 'http://60.205.201.200/hot_novel/'
     df = pd.read_csv(path)  # 读取数据
-    df.columns = ['title', 'classification', 'author', 'status', 'update', 'length', 'cover']  # 更改列名
+    df.columns = ['title', 'classification', 'author', 'status', 'update', 'length', 'cover', 'read',
+                  'download']  # 更改列名
 
     temp = df['update'].isna()
     df.loc[temp, 'update'] = '2000-1-1'
@@ -159,7 +181,8 @@ def dispatch_get_light_novel_library_solo():
     采用先爬取所有详情页小说的网址，保存到novel_txt(每次爬取，需先创建)内，后续逐步读取，爬取，等循环完毕后，文件无内容，然后就执行发送数据；
     """
     set_session()  # 调用创建session对象的函数,获取
-    path = '/home/interface/fixed' + '/results/'  # 结果保存文件路径以及文件名
+    path = os.getcwd() + '\\results\\'  # 结果保存文件路径以及文件名
+    is_existence_path(path)  # 判断路径是否存在
 
     logging.info('start func Solo!')
 
@@ -189,7 +212,8 @@ def dispatch_get_light_novel_library_solo():
                     file.write(i + '\n')
 
             logging.info('end crawl url!')
-            df = pd.DataFrame([{'小说名称': 1, '文库分类': 2, '小说作者': 3, '文章状态': 4, '最后更新': 5, '全文长度': 6, '小说封面': 7}])
+            df = pd.DataFrame(
+                [{'小说名称': 1, '文库分类': 2, '小说作者': 3, '文章状态': 4, '最后更新': 5, '全文长度': 6, '小说封面': 7, '阅读': 8, '下载': 9}])
             df = df.drop(labels=[0], axis=0)
             df.to_csv(path + 'novel.csv', encoding='utf-8_sig', index=False, mode='a')  # 即第一次运行爬虫文件时，需先创建一个csv文件
         else:  # 即文本中有网址，调用爬取数据的函数,如果返回None，则跳出循环
