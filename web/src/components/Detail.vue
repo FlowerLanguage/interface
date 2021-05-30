@@ -401,13 +401,13 @@
                     }
                 ],  // 用户的下载
                 read_top: {
-                    'title':'日常'
+                    'title': '日常'
                 },  // 阅读榜单
                 collection_top: {
-                    'title':'overload'
+                    'title': 'overload'
                 },  // 收藏榜单
                 download_top: {
-                    'title':'神的记事本'
+                    'title': '神的记事本'
                 },  // 下载榜单
                 comment_data: [
                     {
@@ -463,42 +463,46 @@
 
             },
 
-            getTop(param,type){  // 用来提取数量最大的数即阅读、收藏、下载
-                let _this = this
-                let headers = {
-                    'Authorization': 'Token ' + _this.$store.getters.getToken,
-                    'Content-Type': 'application/json'
-                }
-                let index=[]  // 用来存储个数
-                let detail_id=[]  // 用来存储对应的小说id
-                for(let i of param){
-                    let id=i.novel_id
-                    if (detail_id.indexOf(id)==-1){
-                        detail_id.push(id)
-                        index.push(1)
-                    }else {
-                        index[detail_id.indexOf(id)]=index[detail_id.indexOf(id)]+1
+            getTop(param, type) {  // 用来提取数量最大的数即阅读、收藏、下载
+                if (param.length == 0) {
+                    console.log('没有数据')
+                } else {
+                    let _this = this
+                    let headers = {
+                        'Authorization': 'Token ' + _this.$store.getters.getToken,
+                        'Content-Type': 'application/json'
                     }
-                }
-                let num_max_value=Math.max.apply(null,index)  // 取得存储个数中最大的数值
-                let num_max_index=index.indexOf(num_max_value)  // 取得最大个数的索引值
-                let top_id=detail_id[num_max_index]  // 取得该数量最大的小说id
-                let novel_url = 'http://60.205.201.200/hot_novel/?id='+top_id  // 请求该id获取具体的小说内容
-                _this.$http.get(novel_url, {headers: headers}).then(function (res) {
-                    let temp = res['data']['results'][0]  // 取得筛选的结果返回
-                    if(type=='read'){
-                        _this.read_top=temp
-                    }else if (type=='collection'){
-                        _this.collection_top=temp
-                    }else{
-                        _this.download_top=temp
+                    let index = []  // 用来存储个数
+                    let detail_id = []  // 用来存储对应的小说id
+                    for (let i of param) {
+                        let id = i.novel_id
+                        if (detail_id.indexOf(id) == -1) {
+                            detail_id.push(id)
+                            index.push(1)
+                        } else {
+                            index[detail_id.indexOf(id)] = index[detail_id.indexOf(id)] + 1
+                        }
                     }
-                }).catch(function (error) {
-                    _this.$message.error('请重新登录')
-                    _this.$router.push('/')
-                })
+                    let num_max_value = Math.max.apply(null, index)  // 取得存储个数中最大的数值
+                    let num_max_index = index.indexOf(num_max_value)  // 取得最大个数的索引值
+                    let top_id = detail_id[num_max_index]  // 取得该数量最大的小说id
+                    let novel_url = 'http://60.205.201.200/hot_novel/?id=' + top_id  // 请求该id获取具体的小说内容
+                    _this.$http.get(novel_url, {headers: headers}).then(function (res) {
+                        let temp = res['data']['results'][0]  // 取得筛选的结果返回
+                        if (type == 'read') {
+                            _this.read_top = temp
+                        } else if (type == 'collection') {
+                            _this.collection_top = temp
+                        } else {
+                            _this.download_top = temp
+                        }
+                    }).catch(function (error) {
+                        _this.$message.error('请重新登录')
+                        _this.$router.push('/')
+                    })
+                }
             },
-            getRecommend(){  // 用来获取推荐榜单，先获取对应的数据表内容，然后传给其他函数处理
+            getRecommend() {  // 用来获取推荐榜单，先获取对应的数据表内容，然后传给其他函数处理
                 let _this = this
                 let headers = {
                     'Authorization': 'Token ' + _this.$store.getters.getToken,
@@ -510,7 +514,7 @@
 
                 _this.$http.get(recommendRead_url, {headers: headers}).then(function (res) {
                     let temp = res['data']['results']
-                    _this.getTop(temp,'read')
+                    _this.getTop(temp, 'read')
                 }).catch(function (error) {
                     _this.$message.error('请重新登录')
                     _this.$router.push('/')
@@ -518,7 +522,7 @@
 
                 _this.$http.get(recommendCollection_url, {headers: headers}).then(function (res) {
                     let temp = res['data']['results']
-                    _this.getTop(temp,'collection')
+                    _this.getTop(temp, 'collection')
                 }).catch(function (error) {
                     _this.$message.error('请重新登录')
                     _this.$router.push('/')
@@ -526,7 +530,7 @@
 
                 _this.$http.get(recommendDownload_url, {headers: headers}).then(function (res) {
                     let temp = res['data']['results']
-                    _this.getTop(temp,'download')
+                    _this.getTop(temp, 'download')
                 }).catch(function (error) {
                     _this.$message.error('请重新登录')
                     _this.$router.push('/')
@@ -543,13 +547,13 @@
                 _this.comment_data.splice(0, _this.comment_data.length)
                 _this.$http.get(comment_url, {headers: headers}).then(function (res) {
                     let temp = res['data']['results']
-                    let temp_result=[]
-                    for(let i of temp){
-                        if (i.comment){
+                    let temp_result = []
+                    for (let i of temp) {
+                        if (i.comment) {
                             temp_result.push(i)  // 如果该条记录有评论，才加入列表中
                         }
                     }
-                    _this.comment_data=temp_result
+                    _this.comment_data = temp_result
                 }).catch(function (error) {
                     _this.$message.error('请重新登录')
                     _this.$router.push('/')
@@ -569,17 +573,24 @@
                     for (let i of temp) {
                         novel_read.push(i.novel_id)
                     }
-                    _this.read_amount.splice(0, _this.read_amount.length)
+
                     novel_read = _this.duplicateRemove(novel_read)  // 调用去重的函数
-                    for (let i of novel_read) {
-                        let novel_data_url = 'http://60.205.201.200/hot_novel/?id=' + i  // 根据其novel_id获取具体的小说内容
-                        _this.$http.get(novel_data_url, {headers: headers}).then(function (res) {
-                            _this.read_amount.push({
-                                'value': '',
-                                'text': res['data']['results'][0].title
-                            })  // 直接将该内容添加到用户信息的阅读参数中
-                        })
+                    _this.read_amount.splice(0, _this.read_amount.length)
+                    if (novel_read.length == 0) {
+                        console.log('数据表中没有数据')
+                    } else {
+
+                        for (let i of novel_read) {
+                            let novel_data_url = 'http://60.205.201.200/hot_novel/?id=' + i  // 根据其novel_id获取具体的小说内容
+                            _this.$http.get(novel_data_url, {headers: headers}).then(function (res) {
+                                _this.read_amount.push({
+                                    'value': '',
+                                    'text': res['data']['results'][0].title
+                                })  // 直接将该内容添加到用户信息的阅读参数中
+                            })
+                        }
                     }
+
 
                 }).catch(function (error) {
                     _this.$message.error('请重新登录')
@@ -600,16 +611,21 @@
                     for (let i of temp) {
                         novel_read.push(i.novel_id)
                     }
-                    _this.collection_amount.splice(0, _this.collection_amount.length)
+
                     novel_read = _this.duplicateRemove(novel_read)  // 调用去重的函数
-                    for (let i of novel_read) {
-                        let novel_data_url = 'http://60.205.201.200/hot_novel/?id=' + i  // 根据其novel_id获取具体的小说内容
-                        _this.$http.get(novel_data_url, {headers: headers}).then(function (res) {
-                            _this.collection_amount.push({
-                                'value': '',
-                                'text': res['data']['results'][0].title
-                            })  // 直接将该内容添加到用户信息的收藏参数中
-                        })
+                    _this.collection_amount.splice(0, _this.collection_amount.length)
+                    if (novel_read.length == 0) {
+                        console.log('数据表中没有数据')
+                    } else {
+                        for (let i of novel_read) {
+                            let novel_data_url = 'http://60.205.201.200/hot_novel/?id=' + i  // 根据其novel_id获取具体的小说内容
+                            _this.$http.get(novel_data_url, {headers: headers}).then(function (res) {
+                                _this.collection_amount.push({
+                                    'value': '',
+                                    'text': res['data']['results'][0].title
+                                })  // 直接将该内容添加到用户信息的收藏参数中
+                            })
+                        }
                     }
 
                 }).catch(function (error) {
@@ -631,16 +647,21 @@
                     for (let i of temp) {
                         novel_read.push(i.novel_id)
                     }
-                    _this.download_amount.splice(0, _this.download_amount.length)
+
                     novel_read = _this.duplicateRemove(novel_read)  // 调用去重的函数
-                    for (let i of novel_read) {
-                        let novel_data_url = 'http://60.205.201.200/hot_novel/?id=' + i  // 根据其novel_id获取具体的小说内容
-                        _this.$http.get(novel_data_url, {headers: headers}).then(function (res) {
-                            _this.download_amount.push({
-                                'value': '',
-                                'text': res['data']['results'][0].title
-                            })  // 直接将该内容添加到用户信息的下载参数中
-                        })
+                    _this.download_amount.splice(0, _this.download_amount.length)
+                    if (novel_read.length == 0) {
+                        console.log('数据表中没有数据')
+                    } else {
+                        for (let i of novel_read) {
+                            let novel_data_url = 'http://60.205.201.200/hot_novel/?id=' + i  // 根据其novel_id获取具体的小说内容
+                            _this.$http.get(novel_data_url, {headers: headers}).then(function (res) {
+                                _this.download_amount.push({
+                                    'value': '',
+                                    'text': res['data']['results'][0].title
+                                })  // 直接将该内容添加到用户信息的下载参数中
+                            })
+                        }
                     }
 
                 }).catch(function (error) {
@@ -778,7 +799,7 @@
                             _this.$message.info('没有检索到对应内容')
                         } else {
                             _this.$message.success('检索成功')
-                            Msg.$emit('search_module',res)
+                            Msg.$emit('search_module', res)
                         }
 
                     }).catch(function (error) {
