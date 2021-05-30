@@ -10,6 +10,8 @@ class HotNovel(models.Model):
     update = models.DateField(default=None)  # 最后更新
     length = models.IntegerField(default=0)  # 文章长度
     cover = models.URLField(default='http://www.wenku8.net/index.php')  # 小说封面
+    read = models.URLField(default='http://www.wenku8.net/index.php')  # 小说阅读链接
+    download = models.URLField(default='http://www.wenku8.net/index.php')  # 小说下载链接
 
     class Meta:
         db_table = 'hot_novel'  # 存储的数据表名
