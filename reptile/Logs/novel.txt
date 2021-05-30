@@ -1,0 +1,156 @@
+2021-05-30 10:33:36,910 - crawl_novel.py[Line：171] - INFO start func Solo!
+2021-05-30 10:33:36,910 - crawl_novel.py[Line：180] - INFO start crawl!
+2021-05-30 10:33:36,910 - crawl_novel.py[Line：186] - INFO start crawl url!
+2021-05-30 10:33:38,629 - crawl_novel.py[Line：198] - INFO end crawl url!
+2021-05-30 10:33:38,676 - crawl_novel.py[Line：246] - INFO end func Solo!
+2021-05-30 10:33:51,533 - crawl_novel.py[Line：171] - INFO start func Solo!
+2021-05-30 10:33:51,533 - crawl_novel.py[Line：180] - INFO start crawl!
+2021-05-30 10:33:51,533 - crawl_novel.py[Line：204] - INFO start crawl detail,url have 40.
+2021-05-30 10:33:52,346 - crawl_novel.py[Line：112] - INFO [<a href="https://www.wenku8.net/novel/1/1034/index.htm">小说目录</a>]
+2021-05-30 10:33:52,361 - crawl_novel.py[Line：131] - INFO crawl https://www.wenku8.net/book/1034.htm success!
+2021-05-30 10:33:52,377 - crawl_novel.py[Line：222] - INFO 所有url已爬取完毕!
+2021-05-30 10:33:52,377 - crawl_novel.py[Line：227] - INFO remain url 39.
+2021-05-30 10:33:52,377 - crawl_novel.py[Line：228] - INFO end crawl,  Novels have 1 
+2021-05-30 10:33:52,377 - crawl_novel.py[Line：246] - INFO end func Solo!
+2021-05-30 10:36:05,926 - crawl_novel.py[Line：172] - INFO start func Solo!
+2021-05-30 10:36:05,926 - crawl_novel.py[Line：181] - INFO start crawl!
+2021-05-30 10:36:05,926 - crawl_novel.py[Line：187] - INFO start crawl url!
+2021-05-30 10:36:07,535 - crawl_novel.py[Line：199] - INFO end crawl url!
+2021-05-30 10:36:07,550 - crawl_novel.py[Line：247] - INFO end func Solo!
+2021-05-30 10:36:10,362 - crawl_novel.py[Line：172] - INFO start func Solo!
+2021-05-30 10:36:10,362 - crawl_novel.py[Line：181] - INFO start crawl!
+2021-05-30 10:36:10,362 - crawl_novel.py[Line：205] - INFO start crawl detail,url have 40.
+2021-05-30 10:36:11,496 - crawl_novel.py[Line：228] - INFO remain url 40.
+2021-05-30 10:36:11,496 - crawl_novel.py[Line：229] - INFO end crawl,  Novels have 0 
+2021-05-30 10:36:11,496 - crawl_novel.py[Line：247] - INFO end func Solo!
+2021-05-30 10:37:04,684 - crawl_novel.py[Line：172] - INFO start func Solo!
+2021-05-30 10:37:04,684 - crawl_novel.py[Line：181] - INFO start crawl!
+2021-05-30 10:37:04,684 - crawl_novel.py[Line：205] - INFO start crawl detail,url have 40.
+2021-05-30 10:37:05,348 - crawl_novel.py[Line：132] - INFO crawl https://www.wenku8.net/book/1034.htm success!
+2021-05-30 10:37:05,348 - crawl_novel.py[Line：223] - INFO 所有url已爬取完毕!
+2021-05-30 10:37:05,348 - crawl_novel.py[Line：228] - INFO remain url 39.
+2021-05-30 10:37:05,348 - crawl_novel.py[Line：229] - INFO end crawl,  Novels have 1 
+2021-05-30 10:37:05,348 - crawl_novel.py[Line：247] - INFO end func Solo!
+2021-05-30 10:41:22,315 - crawl_novel.py[Line：177] - INFO start func Solo!
+2021-05-30 10:41:22,315 - crawl_novel.py[Line：186] - INFO start crawl!
+2021-05-30 10:41:22,315 - crawl_novel.py[Line：192] - INFO start crawl url!
+2021-05-30 10:41:23,143 - crawl_novel.py[Line：204] - INFO end crawl url!
+2021-05-30 10:41:23,159 - crawl_novel.py[Line：251] - INFO end func Solo!
+2021-05-30 10:41:39,351 - crawl_novel.py[Line：177] - INFO start func Solo!
+2021-05-30 10:41:39,351 - crawl_novel.py[Line：186] - INFO start crawl!
+2021-05-30 10:41:39,351 - crawl_novel.py[Line：210] - INFO start crawl detail,url have 20.
+2021-05-30 10:41:40,460 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/1034.htm success!
+2021-05-30 10:41:41,460 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/1973.htm success!
+2021-05-30 10:41:42,460 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/1213.htm success!
+2021-05-30 10:41:43,366 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/1787.htm success!
+2021-05-30 10:41:44,053 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/1508.htm success!
+2021-05-30 10:41:45,145 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/1011.htm success!
+2021-05-30 10:41:46,536 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/1192.htm success!
+2021-05-30 10:41:47,551 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/1269.htm success!
+2021-05-30 10:41:48,738 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/433.htm success!
+2021-05-30 10:41:49,238 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/1715.htm success!
+2021-05-30 10:41:49,644 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/1073.htm success!
+2021-05-30 10:41:50,847 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/381.htm success!
+2021-05-30 10:41:51,956 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/47.htm success!
+2021-05-30 10:41:53,300 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/1024.htm success!
+2021-05-30 10:41:53,925 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/467.htm success!
+2021-05-30 10:41:54,706 - crawl_novel.py[Line：135] - INFO crawl https://www.wenku8.net/book/1005.htm success!
+2021-05-30 10:41:55,330 - crawl_novel.py[Line：232] - INFO remain url 4.
+2021-05-30 10:41:55,330 - crawl_novel.py[Line：233] - INFO end crawl,  Novels have 16 
+2021-05-30 10:41:55,330 - crawl_novel.py[Line：251] - INFO end func Solo!
+2021-05-30 10:42:25,114 - crawl_novel.py[Line：177] - INFO start func Solo!
+2021-05-30 10:42:25,114 - crawl_novel.py[Line：186] - INFO start crawl!
+2021-05-30 10:42:25,114 - crawl_novel.py[Line：210] - INFO start crawl detail,url have 4.
+2021-05-30 10:42:26,067 - crawl_novel.py[Line：232] - INFO remain url 4.
+2021-05-30 10:42:26,067 - crawl_novel.py[Line：233] - INFO end crawl,  Novels have 0 
+2021-05-30 10:42:26,067 - crawl_novel.py[Line：251] - INFO end func Solo!
+2021-05-30 10:46:13,938 - crawl_novel.py[Line：187] - INFO start func Solo!
+2021-05-30 10:46:13,938 - crawl_novel.py[Line：196] - INFO start crawl!
+2021-05-30 10:46:13,938 - crawl_novel.py[Line：220] - INFO start crawl detail,url have 4.
+2021-05-30 10:46:14,735 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/374.htm success!
+2021-05-30 10:46:15,719 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1359.htm success!
+2021-05-30 10:46:16,297 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/446.htm success!
+2021-05-30 10:46:17,469 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/884.htm success!
+2021-05-30 10:46:17,469 - crawl_novel.py[Line：237] - INFO 所有url已爬取完毕!
+2021-05-30 10:46:17,469 - crawl_novel.py[Line：242] - INFO remain url 0.
+2021-05-30 10:46:17,469 - crawl_novel.py[Line：243] - INFO end crawl,  Novels have 4 
+2021-05-30 10:46:17,469 - crawl_novel.py[Line：261] - INFO end func Solo!
+2021-05-30 10:46:48,826 - crawl_novel.py[Line：187] - INFO start func Solo!
+2021-05-30 10:46:48,837 - crawl_novel.py[Line：252] - ERROR 发送数据错误!
+2021-05-30 10:46:48,837 - crawl_novel.py[Line：261] - INFO end func Solo!
+2021-05-30 10:48:10,531 - crawl_novel.py[Line：187] - INFO start func Solo!
+2021-05-30 10:48:10,535 - crawl_novel.py[Line：252] - ERROR 发送数据错误!
+2021-05-30 10:48:10,536 - crawl_novel.py[Line：261] - INFO end func Solo!
+2021-05-30 10:48:20,976 - crawl_novel.py[Line：188] - INFO start func Solo!
+2021-05-30 10:48:20,993 - crawl_novel.py[Line：253] - ERROR 发送数据错误!
+2021-05-30 10:48:20,993 - crawl_novel.py[Line：262] - INFO end func Solo!
+2021-05-30 10:50:17,224 - crawl_novel.py[Line：188] - INFO start func Solo!
+2021-05-30 10:50:17,225 - crawl_novel.py[Line：197] - INFO start crawl!
+2021-05-30 10:50:17,227 - crawl_novel.py[Line：203] - INFO start crawl url!
+2021-05-30 10:50:18,063 - crawl_novel.py[Line：215] - INFO end crawl url!
+2021-05-30 10:50:18,103 - crawl_novel.py[Line：262] - INFO end func Solo!
+2021-05-30 10:50:21,158 - crawl_novel.py[Line：188] - INFO start func Solo!
+2021-05-30 10:50:21,158 - crawl_novel.py[Line：197] - INFO start crawl!
+2021-05-30 10:50:21,159 - crawl_novel.py[Line：221] - INFO start crawl detail,url have 20.
+2021-05-30 10:50:22,493 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1034.htm success!
+2021-05-30 10:50:23,743 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1973.htm success!
+2021-05-30 10:50:24,393 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1213.htm success!
+2021-05-30 10:50:25,640 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1787.htm success!
+2021-05-30 10:50:26,269 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1508.htm success!
+2021-05-30 10:50:27,300 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1011.htm success!
+2021-05-30 10:50:28,632 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1192.htm success!
+2021-05-30 10:50:29,444 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1269.htm success!
+2021-05-30 10:50:30,273 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/433.htm success!
+2021-05-30 10:50:31,543 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1715.htm success!
+2021-05-30 10:50:32,000 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1073.htm success!
+2021-05-30 10:50:32,566 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/381.htm success!
+2021-05-30 10:50:33,796 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/47.htm success!
+2021-05-30 10:50:34,750 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1024.htm success!
+2021-05-30 10:50:36,116 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/467.htm success!
+2021-05-30 10:50:37,438 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1005.htm success!
+2021-05-30 10:50:37,910 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/374.htm success!
+2021-05-30 10:50:38,686 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1359.htm success!
+2021-05-30 10:50:39,179 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/446.htm success!
+2021-05-30 10:50:39,594 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/884.htm success!
+2021-05-30 10:50:39,604 - crawl_novel.py[Line：238] - INFO 所有url已爬取完毕!
+2021-05-30 10:50:39,604 - crawl_novel.py[Line：243] - INFO remain url 0.
+2021-05-30 10:50:39,604 - crawl_novel.py[Line：244] - INFO end crawl,  Novels have 20 
+2021-05-30 10:50:39,604 - crawl_novel.py[Line：262] - INFO end func Solo!
+2021-05-30 10:50:46,694 - crawl_novel.py[Line：188] - INFO start func Solo!
+2021-05-30 10:50:46,711 - crawl_novel.py[Line：253] - ERROR 发送数据错误!
+2021-05-30 10:50:46,711 - crawl_novel.py[Line：262] - INFO end func Solo!
+2021-05-30 10:54:31,288 - crawl_novel.py[Line：188] - INFO start func Solo!
+2021-05-30 10:54:31,289 - crawl_novel.py[Line：197] - INFO start crawl!
+2021-05-30 10:54:31,289 - crawl_novel.py[Line：203] - INFO start crawl url!
+2021-05-30 10:54:32,105 - crawl_novel.py[Line：215] - INFO end crawl url!
+2021-05-30 10:54:32,118 - crawl_novel.py[Line：262] - INFO end func Solo!
+2021-05-30 10:54:41,009 - crawl_novel.py[Line：188] - INFO start func Solo!
+2021-05-30 10:54:41,010 - crawl_novel.py[Line：197] - INFO start crawl!
+2021-05-30 10:54:41,010 - crawl_novel.py[Line：221] - INFO start crawl detail,url have 20.
+2021-05-30 10:54:41,529 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1034.htm success!
+2021-05-30 10:54:43,637 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1973.htm success!
+2021-05-30 10:54:44,913 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1213.htm success!
+2021-05-30 10:54:46,341 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1787.htm success!
+2021-05-30 10:54:46,765 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1508.htm success!
+2021-05-30 10:54:47,461 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1011.htm success!
+2021-05-30 10:54:48,251 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1192.htm success!
+2021-05-30 10:54:49,259 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1269.htm success!
+2021-05-30 10:54:49,819 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/433.htm success!
+2021-05-30 10:54:50,466 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1715.htm success!
+2021-05-30 10:54:51,714 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1073.htm success!
+2021-05-30 10:54:52,809 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/381.htm success!
+2021-05-30 10:54:53,607 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/47.htm success!
+2021-05-30 10:54:54,586 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1024.htm success!
+2021-05-30 10:54:55,045 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/467.htm success!
+2021-05-30 10:54:56,200 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1005.htm success!
+2021-05-30 10:54:56,657 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/374.htm success!
+2021-05-30 10:54:57,083 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/1359.htm success!
+2021-05-30 10:54:58,256 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/446.htm success!
+2021-05-30 10:54:59,203 - crawl_novel.py[Line：145] - INFO crawl https://www.wenku8.net/book/884.htm success!
+2021-05-30 10:54:59,212 - crawl_novel.py[Line：238] - INFO 所有url已爬取完毕!
+2021-05-30 10:54:59,212 - crawl_novel.py[Line：243] - INFO remain url 0.
+2021-05-30 10:54:59,212 - crawl_novel.py[Line：244] - INFO end crawl,  Novels have 20 
+2021-05-30 10:54:59,212 - crawl_novel.py[Line：262] - INFO end func Solo!
+2021-05-30 10:55:02,982 - crawl_novel.py[Line：188] - INFO start func Solo!
+2021-05-30 10:55:03,056 - crawl_novel.py[Line：173] - INFO 8.5380859375kb！
+2021-05-30 10:55:03,056 - crawl_novel.py[Line：262] - INFO end func Solo!

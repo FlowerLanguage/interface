@@ -27,7 +27,12 @@ logging.basicConfig(level=logging.DEBUG,
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36',
-    'Cookies': "CURRENT_FNVAL=80; _uuid=A7D3D2D6-1811-75C5-8F17-F3414DED8BB437465infoc; blackside_state=1; rpdid=|(Yulukm)lm0J'uY|RRuYlRu; sid=b0z0tsg4; DedeUserID=38836094; DedeUserID__ckMd5=aa9a77fcbb1f8dfb; SESSDATA=0ea875ad%2C1622357180%2C29d6d*c1; bili_jct=349c112ef5644e9f42dad8a09e848a4f; LIVE_BUVID=AUTO6016093965651028; Hm_lvt_8a6e55dbd2870f0f5bc9194cddf32a02=1609417407; buvid3=2332A819-F381-4003-9461-C8B0A5FAE225185007infoc; fingerprint=82150c9f9418c38d68d6d84db0b4e366; buvid_fp=2332A819-F381-4003-9461-C8B0A5FAE225185007infoc; buvid_fp_plain=3FF81D49-1780-4773-B92F-ADAA7FABE332155821infoc; PVID=5; bsource=search_baidu",
+    'Cookies': "CURRENT_FNVAL=80; _uuid=A7D3D2D6-1811-75C5-8F17-F3414DED8BB437465infoc; blackside_state=1; rpdid=|(Yulukm)lm0J'uY|RRuYlRu; "
+               "sid=b0z0tsg4; DedeUserID=38836094; DedeUserID__ckMd5=aa9a77fcbb1f8dfb; SESSDATA=0ea875ad%2C1622357180%2C29d6d*c1; "
+               "bili_jct=349c112ef5644e9f42dad8a09e848a4f; LIVE_BUVID=AUTO6016093965651028;"
+               " Hm_lvt_8a6e55dbd2870f0f5bc9194cddf32a02=1609417407; buvid3=2332A819-F381-4003-9461-C8B0A5FAE225185007infoc; "
+               "fingerprint=82150c9f9418c38d68d6d84db0b4e366; buvid_fp=2332A819-F381-4003-9461-C8B0A5FAE225185007infoc; "
+               "buvid_fp_plain=3FF81D49-1780-4773-B92F-ADAA7FABE332155821infoc; PVID=5; bsource=search_baidu",
 }
 
 
@@ -282,20 +287,20 @@ def dispatch_task():
     set_session()
     urls = get_all_urls()  # 先取得所有需要爬取的视频的url
 
-    # start1 = time.time()
-    # for i in urls:
-    #     get_detail(i)
-    # end1 = time.time()
-    # save_data()
+    start1 = time.time()
+    for i in urls:
+        get_detail(i)
+    end1 = time.time()
 
     logging.info('start async function.')
     start2 = time.time()
     asyncio.get_event_loop().run_until_complete(async_func(urls))  # 调用异步函数
     end2 = time.time()
     logging.info('end async function.')
+
     save_data()
 
-    # logging.info('normal cost time {}s.'.format(end1 - start1))
+    logging.info('normal cost time {}s.'.format(end1 - start1))
     logging.info('async cost time {}s.'.format(end2 - start2))
 
 
