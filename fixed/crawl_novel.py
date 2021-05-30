@@ -10,7 +10,7 @@ import sys
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(filename)s[Line：%(lineno)d] - %(levelname)s %(message)s',
-                    filename='/home/interface/fixed/Logs/novel.txt',
+                    filename='Logs\\novel.txt',
                     filemode='a')
 session = requests.Session()  # 创建一个全局Session对象
 
