@@ -159,7 +159,7 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_THROTTLE_RATES': {  # 限流措施
         'anon': '100/day',
-        'user': '1000/day'
+        'user': '100000/day'
     },
     'DEFAULT_PAGINATION_CLASS': 'pagination.PageNumberPaginationManual',  # 分页
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',  # 配置自动生成接口文档的默认配置
